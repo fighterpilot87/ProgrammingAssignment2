@@ -11,6 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
     x <<- y
     m <<- NULL
   }
+  get <- function() x ## Then gets the value of the matrix
 
 }
 
