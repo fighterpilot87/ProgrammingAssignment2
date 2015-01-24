@@ -33,5 +33,8 @@ cacheSolve <- function(x, ...) {
   ## gets it using get() from makeCacheVector function
   data <- x$get()  
   
+  m <- solve(data, ...) ## Solve for inverse
+  x$setinverse(m) ## store inverse in cache
+  m  ## return inverse
 
 }
